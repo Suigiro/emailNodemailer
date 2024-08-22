@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body>
+    <form name="contato">
+        <input type="text" />
+        <button type="button">Enviar</button>
+    </form>
+</body>
+
+<script>
+    let url="http://localhost:3000";
+    data = this.FormData({
+        nome:"Teste",
+        mensagem: "Testando Mensagem"
+    });
+    $.post(url, data);
+</script>
+</html>
